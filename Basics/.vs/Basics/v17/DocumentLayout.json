@@ -10,7 +10,7 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 100,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
@@ -24,9 +24,9 @@
               "RelativeDocumentMoniker": "Basics\\Program.cs",
               "ToolTip": "C:\\Users\\Dodi\\Desktop\\Csharp-review\\Basics\\Basics\\Program.cs",
               "RelativeToolTip": "Basics\\Program.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAuwEIAAAAAAAAA",
+              "ViewState": "AQIAAEoAAAAAAAAAAAAgwFcAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-31T19:26:53.732Z",
+              "WhenOpened": "2024-06-09T17:53:49.067Z",
               "EditorCaption": ""
             }
           ]

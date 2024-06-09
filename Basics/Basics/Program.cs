@@ -54,7 +54,7 @@ namespace Basics
             Console.WriteLine("Name count: " + name.Length); // Length - get count
             /* We can also use Methods
             just add . to any strings and it will show the available methods that we can use
-            REMEBER use () since its a method */
+            REMEMBER use () since its a method */
             Console.WriteLine("Name toUpper() method: " + name.ToUpper());
             Console.WriteLine("Name Contains(param) method: " + name.Contains("saki")); // parameterized method
             Console.WriteLine("Access using letter using brackets [0]: " + name[0]); // bracket notation - INDEX STARTS AT 0
@@ -62,10 +62,44 @@ namespace Basics
             Console.WriteLine("Grab part of of string using Substring(param1, param2): " + name.Substring(11, 4)); // params (index, how many)
             Console.WriteLine();
 
-            Console.ReadLine(); 
-             
+
+            // NUMBERS
+            Console.WriteLine("#5 NUMBERS");
+
+            int num = 10;
+            num++; // to increment or -- for decrement
+
+            Console.WriteLine(num); // we can write numbers inside of this
+            Console.WriteLine( 10 + 5 ); // or even do math operations
+            Console.WriteLine(Math.Abs(-40)); // we can also call math methods Pow, Sqrt, Max/Min, Round etc.
+            Console.WriteLine();
 
 
+            // GET USER INPUT
+            Console.WriteLine("#6  GET USER INPUT");
+
+            Console.Write("Enter you name: ");
+            string myName = Console.ReadLine();
+            Console.WriteLine("Hello " + myName);
+            Console.WriteLine();
+
+
+            // CONVERTERS
+            Console.WriteLine("#7 CONVERTERS");
+
+            int numConvert = Convert.ToInt32("21");
+            Console.WriteLine(numConvert + 10); // this will work because the datatype is converted to int
+
+            // sample calculator
+            Console.WriteLine("Calculate the Sum of two numbers :)");
+            Console.Write("Enter #1: ");
+            double num1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Enter #2: ");
+            double num2 = Convert.ToDouble(Console.ReadLine()); ;
+            Console.WriteLine("The sum of two numbers is = " + (num1 + num2));
+            Console.WriteLine();
+
+            Console.ReadLine();
         }
     }
 }
