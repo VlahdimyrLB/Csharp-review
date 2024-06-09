@@ -99,7 +99,97 @@ namespace Basics
             Console.WriteLine("The sum of two numbers is = " + (num1 + num2));
             Console.WriteLine();
 
+
+            // Madlibs
+            Console.WriteLine("#8 Madlibs Game");
+
+            string color, pluralNoun, celebrity;
+            Console.Write("Enter a Color: ");
+            color = Console.ReadLine();
+            Console.Write("Enter a Plural Noun: ");
+            pluralNoun = Console.ReadLine();
+            Console.Write("Enter a Celebrity: ");
+            celebrity = Console.ReadLine();
+
+            Console.WriteLine("Roses are " + color);
+            Console.WriteLine(pluralNoun + " are Blue");
+            Console.WriteLine("I Love " + celebrity);
+            Console.WriteLine();
+
+
+            // ARRAYS
+            Console.WriteLine("#9 ARRAYS");
+
+            int[] luckyNumbers = { 9, 21, 12, 10, 17, 56, 101 };
+            string[] friends = new string[3]; // declare without elements but assign how many will be the elements
+
+            luckyNumbers[0] = 1; // change the value of first element
+
+            // populate the array
+            friends[0] = "John";
+            friends[1] = "Bern";
+            friends[2] = "Mar";
+
+            Console.WriteLine(luckyNumbers[0]); // access by index
+            Console.WriteLine();
+
+
+            // METHODS
+            Console.WriteLine("#10 METHODS");
+
+            // the method is below
+            SayHi("Vlahd"); // call/invoke the method
+            Console.WriteLine();
+
+
+            // RETURN
+            Console.WriteLine("#11 RETURN");
+
+            // the method with return type is below
+            Console.WriteLine(cube(3)); 
+            Console.WriteLine();
+
+
+            // IF STATEMENTS
+            Console.WriteLine("#12 IF STATEMENTS");
+
+            bool isFemale = false;
+            bool isTall = true;
+
+            if (isFemale && isTall)
+            {
+                Console.WriteLine("Tall Female");
+            } else if (isFemale && !isTall)
+            {
+                Console.WriteLine("Short Female");
+            }
+            else if (!isFemale && isTall)
+            {
+                Console.WriteLine("Tall Male");
+            }
+            else {
+                Console.WriteLine("Short Male");
+            }
+
+
             Console.ReadLine();
+        }
+
+
+        // METHODS - block of code to perform specific task
+        // void - to specify that the method doesn't return a value.
+        // void - operations that do not need to send any data back to the caller.
+        static void SayHi(string name)
+        {
+            Console.WriteLine("Hello " + name);
+        }
+
+        // RETURN - method with return type
+        // when the method needs to process data and provide a result back to the caller.
+        static int cube(int num)
+        {
+            int result = num * num * num;
+            return result;
         }
     }
 }
