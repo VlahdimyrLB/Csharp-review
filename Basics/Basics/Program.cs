@@ -70,7 +70,7 @@ namespace Basics
             num++; // to increment or -- for decrement
 
             Console.WriteLine(num); // we can write numbers inside of this
-            Console.WriteLine( 10 + 5 ); // or even do math operations
+            Console.WriteLine(10 + 5); // or even do math operations
             Console.WriteLine(Math.Abs(-40)); // we can also call math methods Pow, Sqrt, Max/Min, Round etc.
             Console.WriteLine();
 
@@ -146,12 +146,12 @@ namespace Basics
             Console.WriteLine("#11 RETURN");
 
             // the method with return type is below
-            Console.WriteLine(cube(3)); 
+            Console.WriteLine(cube(3));
             Console.WriteLine();
 
 
-            // IF STATEMENTS
-            Console.WriteLine("#12 IF STATEMENTS");
+            // IF STATEMENT
+            Console.WriteLine("#12 IF STATEMENT");
 
             bool isFemale = false;
             bool isTall = true;
@@ -159,7 +159,8 @@ namespace Basics
             if (isFemale && isTall)
             {
                 Console.WriteLine("Tall Female");
-            } else if (isFemale && !isTall)
+            }
+            else if (isFemale && !isTall)
             {
                 Console.WriteLine("Short Female");
             }
@@ -167,9 +168,19 @@ namespace Basics
             {
                 Console.WriteLine("Tall Male");
             }
-            else {
+            else
+            {
                 Console.WriteLine("Short Male");
             }
+            Console.WriteLine();
+
+
+            // MORE COMPLEX IF STATEMENT
+            Console.WriteLine("#13 COMPLEX IF STATEMENTS");
+
+            // refer to the GetMax() method below
+            Console.WriteLine(GetMax(2, 10, 40));
+
 
 
             Console.ReadLine();
@@ -184,11 +195,34 @@ namespace Basics
             Console.WriteLine("Hello " + name);
         }
 
+
         // RETURN - method with return type
         // when the method needs to process data and provide a result back to the caller.
         static int cube(int num)
         {
             int result = num * num * num;
+            return result;
+        }
+
+
+        // For the COMPLEX IF STATEMENT example
+        static int GetMax(int num1, int num2, int num3)
+        {
+            int result;
+
+            // with comparison operators
+            if (num1 >= num2 && num1 >= num3)
+            {
+                result = num1;
+            } else if (num2 >= num1 && num2 >= num3) 
+            { 
+                result = num2; 
+            } 
+            else
+            {
+                result = num3;
+            }
+
             return result;
         }
     }

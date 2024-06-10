@@ -1,0 +1,15 @@
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\bin\Debug\net8.0\BasicsPart2.exe
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\bin\Debug\net8.0\BasicsPart2.deps.json
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\bin\Debug\net8.0\BasicsPart2.runtimeconfig.json
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\bin\Debug\net8.0\BasicsPart2.dll
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\bin\Debug\net8.0\BasicsPart2.pdb
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\BasicsPart2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\BasicsPart2.AssemblyInfoInputs.cache
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\BasicsPart2.AssemblyInfo.cs
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\BasicsPart2.csproj.CoreCompileInputs.cache
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\BasicsPart2.sourcelink.json
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\BasicsPart2.dll
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\refint\BasicsPart2.dll
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\BasicsPart2.pdb
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\BasicsPart2.genruntimeconfig.cache
+C:\Users\Dodi\Desktop\Csharp-review\BasicsPart2\obj\Debug\net8.0\ref\BasicsPart2.dll
