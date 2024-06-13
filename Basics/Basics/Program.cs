@@ -96,7 +96,7 @@ namespace Basics
             double num1 = Convert.ToDouble(Console.ReadLine());
             Console.Write("Enter #2: ");
             double num2 = Convert.ToDouble(Console.ReadLine()); ;
-            Console.WriteLine("The sum of two numbers is = " + (num1 + num2));
+            Console.WriteLine("The sum of   two numbers is = " + (num1 + num2));
             Console.WriteLine();
 
 
@@ -180,7 +180,7 @@ namespace Basics
 
             // refer to the GetMax() method below
             Console.WriteLine(GetMax(2, 10, 40));
-
+            Console.WriteLine();
 
 
             Console.ReadLine();

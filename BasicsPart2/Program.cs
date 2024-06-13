@@ -43,8 +43,62 @@
 
 
 
+            // WHILE LOOPS
+            Console.WriteLine("#14 WHILE LOOPS");
 
+            int index = 1;
+            while (index <= 5)
+            {
+                Console.WriteLine(index);
+                index++;
+            }
+            Console.WriteLine();
+
+
+            // WHILE LOOPS
+            Console.WriteLine("#15 DO-WHILE LOOPS");
+
+            int index2 = 6;
+            do
+            {
+                Console.WriteLine(index);
+                index2++;
+            } while (index2 <= 5);
+            Console.WriteLine();
+
+
+            // GUESSING GAME 
+            Console.WriteLine("#15 GUESSING GAME ");
+
+            string secretWord = "giraffe";
+            string guess = "";
+            int guessCount = 0;
+            int guessLimit = 3;
+            bool outOfGuesses = false;
+
+            while (guess != secretWord && !outOfGuesses)
+            {
+                if (guessCount < guessLimit)
+                {
+                    Console.Write("Guess the animal: ");
+                    guess = Console.ReadLine();
+                    guessCount++;
+                } else
+                {
+                    outOfGuesses = true;
+                }
+                
+            }
             
+            if(outOfGuesses == true)
+            {
+                Console.Write("Guess Limit, You Lose");
+            } else
+            {
+                Console.Write("You Win");
+            }
+            Console.WriteLine();
+
 
 
 
