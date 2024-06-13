@@ -150,37 +150,7 @@ namespace Basics
             Console.WriteLine();
 
 
-            // IF STATEMENT
-            Console.WriteLine("#12 IF STATEMENT");
-
-            bool isFemale = false;
-            bool isTall = true;
-
-            if (isFemale && isTall)
-            {
-                Console.WriteLine("Tall Female");
-            }
-            else if (isFemale && !isTall)
-            {
-                Console.WriteLine("Short Female");
-            }
-            else if (!isFemale && isTall)
-            {
-                Console.WriteLine("Tall Male");
-            }
-            else
-            {
-                Console.WriteLine("Short Male");
-            }
-            Console.WriteLine();
-
-
-            // MORE COMPLEX IF STATEMENT
-            Console.WriteLine("#13 COMPLEX IF STATEMENTS");
-
-            // refer to the GetMax() method below
-            Console.WriteLine(GetMax(2, 10, 40));
-            Console.WriteLine();
+            
 
 
             Console.ReadLine();
@@ -201,28 +171,6 @@ namespace Basics
         static int cube(int num)
         {
             int result = num * num * num;
-            return result;
-        }
-
-
-        // For the COMPLEX IF STATEMENT example
-        static int GetMax(int num1, int num2, int num3)
-        {
-            int result;
-
-            // with comparison operators
-            if (num1 >= num2 && num1 >= num3)
-            {
-                result = num1;
-            } else if (num2 >= num1 && num2 >= num3) 
-            { 
-                result = num2; 
-            } 
-            else
-            {
-                result = num3;
-            }
-
             return result;
         }
     }
