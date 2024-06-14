@@ -92,7 +92,7 @@
 
 
 
-            // WHILE LOOPS
+            // DO-WHILE LOOPS
             Console.WriteLine("#15 DO-WHILE LOOPS");
 
             int index2 = 6;
