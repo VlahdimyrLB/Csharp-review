@@ -124,6 +124,24 @@
             Console.WriteLine();
 
 
+            // INHERITANCE - inherit functionality of another class
+            // concept 1: inherit all functionality of super class
+            // concept 2: extending the functionality of sub class by having its own functions
+            // concept 3: override one of the functions of super class
+            Console.WriteLine("INHERITANCE");
+            
+            // refer to Chef class
+            Chef chef = new Chef();
+            chef.MakeSpecialDish();
+            chef.MakeChicken();
+
+            // refer to Italian Chef
+            ItalianChef italianChef = new ItalianChef();
+            italianChef.MakeSpecialDish();
+            italianChef.MakePasta();
+
+            Console.WriteLine();
+
 
             Console.ReadLine();
         }
