@@ -97,8 +97,32 @@
 
 
 
-            // STATIC CLASS
-            Console.WriteLine("STATIC CLASS");
+            // STATIC ATTRIBUTES - shared by all objects, contained in class itself
+            Console.WriteLine("STATIC ATTRIBUTES");
+            // refer Song class
+
+            Song holiday = new Song("Holiday", "Green Day", 200);
+            Song kashmir = new Song("Kashmir", "Led Zepplin", 150);
+
+            // can be accessed directly using the class because its static 
+            // songCount belongs to the class itself
+            Console.WriteLine(Song.songCount); 
+
+            Console.WriteLine(holiday.getSongCount()); // access using individual object
+            Console.WriteLine();
+
+
+
+            // STATIC METHOD & CLASSES
+            // static method - method that belongs to the actual class
+            Console.WriteLine("STATIC METHOD & CLASSES");
+            // we dont have to create an actual instance of the Math class
+            Console.WriteLine(Math.Sqrt(144));
+
+            // example: access the method directly without instantiating the method
+            UsefulTools.SayHi("Vlahd");
+            Console.WriteLine();
+
 
 
             Console.ReadLine();
