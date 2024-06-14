@@ -40,6 +40,12 @@ Part 2 (BasicsPart2)
 
 ## Data Manipulation (CRUD)
 
-## MS SQL
+## MSSQL Server
 
 ## File Handling 
+
+
+
+## Tutorial Links
+Basics and OOP - https://www.youtube.com/watch?v=GhQdlIFylQ8
+MSSQL Server - https://youtu.be/lo80Q8C0nXk?si=3yvl7fMh2ZHmMHlm
