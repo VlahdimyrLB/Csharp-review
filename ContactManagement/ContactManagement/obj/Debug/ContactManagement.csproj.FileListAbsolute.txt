@@ -1,0 +1,9 @@
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\bin\Debug\ContactManagement.exe.config
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csprojResolveAssemblyReference.cache
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\obj\Debug\ContactManagement.Properties.Resources.resources
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\obj\Debug\ContactManagement.csproj.GenerateResource.Cache
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\bin\Debug\ContactManagement.exe
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\bin\Debug\ContactManagement.pdb
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\obj\Debug\ContactManagement.exe
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\obj\Debug\ContactManagement.pdb
+C:\Users\Dodi\Desktop\Csharp-review\ContactManagement\ContactManagement\obj\Debug\ContactManagement.ContactManagement.resources
