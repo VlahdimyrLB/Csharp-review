@@ -38,9 +38,15 @@ Part 2 (BasicsPart2)
 - Static Method and Classes
 - Inheritance
 
-## Data Manipulation (CRUD)
-
 ## MSSQL Server
+- Reviewed SSMS connection, creation of database and tables, and add, update/alter and delete data/tables.
+- SQL Queries (All, mainly CRUD)
+
+## Data Manipulation (CRUD - winforms)
+- CRUDpractice1 (4.7.2)
+- Contact Management (4.8)
+
+
 
 ## File Handling 
 
