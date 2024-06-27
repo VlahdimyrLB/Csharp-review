@@ -107,5 +107,17 @@ namespace InventoryManagement
             DataTable dt = itemsCrud.SearchItem(searchTextBox.Text);
             dataGridView1.DataSource = dt;
         }
+
+        private void viewCategoriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CategoriesForm form = new CategoriesForm();
+            form.ShowDialog();
+        }
+
+        private void suppliersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SupplierForm form = new SupplierForm();
+            form.ShowDialog();
+        }
     }
 }

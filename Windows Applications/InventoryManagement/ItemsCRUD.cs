@@ -98,7 +98,10 @@ namespace InventoryManagement
         {
             using (SqlConnection conn = new SqlConnection(connectionStrings))
             {
-                string query = "SELECT * FROM Items WHERE ItemName LIKE @SearchTerm";
+                string query = "SELECT Items.Id, ItemName, Items.CategoryId, Categories.Name As Category, Quantity, Price, Items.SupplierId, Suppliers.Name As Supplier FROM Items " +
+                       "INNER JOIN Categories ON Items.CategoryId = Categories.Id " +
+                       "INNER JOIN Suppliers ON Items.SupplierId = Suppliers.Id " +
+                       "WHERE ItemName LIKE @SearchTerm OR Categories.Name LIKE @SearchTerm";
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
                 da.SelectCommand.Parameters.AddWithValue("@SearchTerm", "%" + SearchTerm + "%");
                 
