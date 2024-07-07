@@ -202,14 +202,14 @@
             // viewCategoriesToolStripMenuItem
             // 
             this.viewCategoriesToolStripMenuItem.Name = "viewCategoriesToolStripMenuItem";
-            this.viewCategoriesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.viewCategoriesToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.viewCategoriesToolStripMenuItem.Text = "Categories";
             this.viewCategoriesToolStripMenuItem.Click += new System.EventHandler(this.viewCategoriesToolStripMenuItem_Click);
             // 
             // suppliersToolStripMenuItem
             // 
             this.suppliersToolStripMenuItem.Name = "suppliersToolStripMenuItem";
-            this.suppliersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.suppliersToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.suppliersToolStripMenuItem.Text = "Suppliers";
             this.suppliersToolStripMenuItem.Click += new System.EventHandler(this.suppliersToolStripMenuItem_Click);
             // 
@@ -236,6 +236,7 @@
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "InventoryManagement";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inventory Mangement";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
