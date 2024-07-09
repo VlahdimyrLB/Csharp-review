@@ -41,7 +41,7 @@ namespace InventoryManagement
             {
                 DataGridViewRow row = dataGridView1.SelectedRows[0];
 
-                if (row.Index != 0 && row.Cells["Name"].Value != null)
+                if (row.Index != null && row.Cells["Name"].Value != null)
                 {
                     supplierTextBox.Text = row.Cells["Name"].Value.ToString();
                     contactTextBox.Text = row.Cells["Contact"].Value.ToString();

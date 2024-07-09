@@ -1,31 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.Data.SqlClient;
-using System.Configuration;
 
-namespace InventoryManagement
+namespace LibraryManagementSystem
 {
-    internal class CategoriesCRUD
+    internal class AuthorCRUD
     {
         private string connectionString;
-        public CategoriesCRUD() 
+
+        public AuthorCRUD()
         {
-            connectionString = System.Configuration.ConfigurationManager.ConnectionStrings["InventoryDB"].ConnectionString;
+            connectionString = ConfigurationManager.ConnectionStrings["LibraryDb"].ConnectionString;
         }
 
-        // CREATE
-        public void AddCategory(string name)
+        // CREATE 
+        public void AddAuthor(string name, DateTime birthday, string nationality)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "INSERT INTO Categories (Name) VALUES (@Name)";
+                string query = "INSERT INTO Authors (Name, Birthday, Nationality) VALUES (@Name, @Birthday, @Nationality)";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Birthday", birthday);
+                    cmd.Parameters.AddWithValue("@Nationality", nationality);
+
 
                     conn.Open();
                     cmd.ExecuteNonQuery();
@@ -33,29 +37,35 @@ namespace InventoryManagement
             }
         }
 
-        // READ CATEGORIES
-        public DataTable ReadCategories()
+
+        // READ
+        public DataTable GetAuthor()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM Categories";
+                string query = "SELECT * FROM Authors";
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
                 DataTable dt = new DataTable();
+
                 da.Fill(dt);
                 return dt;
+
             }
         }
 
-        // UDPATE
-        public void UpdateCategory(int id, string name)
+        // UPDATE 
+        public void UpdateAuthor(int id, string name, DateTime birthday, string nationality)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "UPDATE Categories SET Name = @Name WHERE Id = @Id";
+                string query = "UPDATE Authors SET Namne=@Name, Birthday=@Birthday, Nationality=@Nationality WHERE id=@id";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Id", id);
+                    cmd.Parameters.AddWithValue("@id", id);
                     cmd.Parameters.AddWithValue("@Name", name);
+                    cmd.Parameters.AddWithValue("@Birthday", birthday);
+                    cmd.Parameters.AddWithValue("@Nationality", nationality);
+
 
                     conn.Open();
                     cmd.ExecuteNonQuery();
@@ -64,32 +74,32 @@ namespace InventoryManagement
         }
 
         // DELETE
-        public void DeleteCategory(int id)
+        public void DeleteAuthor(int id)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "DELETE FROM Categories WHERE Id = @Id";
+                string query = "DELETE FROM Authors WHERE id=@id";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@Id", id);
+                    cmd.Parameters.AddWithValue("@id", id);
 
                     conn.Open();
                     cmd.ExecuteNonQuery();
-
                 }
             }
         }
 
-        // SEARCH
-        public DataTable SearchCategory(string SearchTerm)
+        // Search Items
+        public DataTable SearchAuthor(string searchTerm)
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
-                string query = "SELECT * FROM Categories WHERE Name LIKE @SearchTerm";
+                string query = "SELECT * FROM Authors WHERE Name LIKE @SearchTerm OR Birthday LIKE @SearchTerm OR Nationality LIKE @SearchTerm";
                 SqlDataAdapter da = new SqlDataAdapter(query, conn);
-                da.SelectCommand.Parameters.AddWithValue("@SearchTerm", "%" + SearchTerm + "%");
+                da.SelectCommand.Parameters.AddWithValue("@SearchTerm", "%" + searchTerm + "%");
 
                 DataTable dt = new DataTable();
+
                 da.Fill(dt);
                 return dt;
             }
